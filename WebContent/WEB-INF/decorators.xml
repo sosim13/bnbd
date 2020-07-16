@@ -1,0 +1,14 @@
+<decorators defaultdir="/WEB-INF/decorator">
+	<!-- <decorator name="main" page="layout.jsp">
+		<pattern>/</pattern>
+	</decorator>
+	 -->
+	<decorator name="login" page="layout_login.jsp">
+		<pattern>/login/*.do</pattern>
+	</decorator>
+	
+	<excludes>
+		<pattern>*.json</pattern>
+		<pattern>mapPhotoData.do</pattern>
+	</excludes>
+</decorators>

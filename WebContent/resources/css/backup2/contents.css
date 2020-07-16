@@ -1,0 +1,76 @@
+@import url('common.css');
+
+/*layout*/
+#wrap{position:relative; width:1300px;  overflow:hidden; }
+#sidebar{position:relative;float:left;width:260px;min-height:750px; height:auto;}
+#container{ position:relative;float:left;width:1040px;min-height:100%;overflow:hidden; }
+
+/*sidebar*/
+#sidebar h1{position:fixed; top:0px;margin:25px 20px; color:#fff;font-size:20px;height:50px;line-height:50px;}
+
+/*footer*/
+#footer{position:fixed; bottom:30px; width:260px;margin:0 auto;overflow:hidden; line-height:15px;color:#999;}
+#btm_site{margin:10px 20px;overflow:hidden;}
+#btm_site img{margin-bottom:3px;}
+#copy{overflow:hidden;}
+#copy p{margin:0 20px;font-size:11px;color:#aaa}
+
+/*navi*/
+#navi{ position:fixed; top:90px;;margin:0 auto;width:260px; z-index:99;margin-top:8px; overflow:hidden}
+#navi ul{ margin:0;width:260px;}
+#navi li {margin:0;padding:0;width:260px;color:#fff;}
+#navi li a{color:#eee; display:block;font-size:16px;overflow:hidden;padding:18px 20px; }
+#navi li a.smenu{color:#c5c5c5;font-size:14px;  text-indent:20px;padding:0px 20px 15px 20px;overflow:hidden}
+#navi li a.smenu_on{color:#fff; font-weight:bold;font-size:14px;padding:0px 20px 15px 20px;
+text-indent:20px;overflow:hidden}
+#navi li a:hover.smenu{color:#fff; font-weight:bold;font-size:14px;padding:0px 20px 15px 20px;
+text-indent:20px;overflow:hidden}
+#navi li a:hover.smenu_on{color:#fff; font-weight:bold;font-size:14px;padding:0px 20px 15px 20px;
+text-indent:20px;overflow:hidden}
+#navi li a:hover{color:#febb08;font-weight:bold;text-decoration:none;overflow:hidden}
+#navi li a.menu_on{ color:#febb08;font-weight:bold;text-decoration:none; overflow:hidden}
+
+
+/**sub**/
+h3.subtit{position: relative;margin:0 auto; margin-top:70px;width:750px;overflow:hidden;font-size:42px;line-height:42px;
+font-weight:normal;padding:15px; 0;color:#111;font-family: "NanumGothic", "NanumGothic",Helvetica,sans-serif;}
+#navi_map{position: relative;width:750px; margin:0 auto;margin-top:20px;font-size:13px;font-weight:normal;text-align:right;}
+#navi_map a{color:#777}
+
+/*board*/
+/*list*/
+#list_box{margin:0 auto;width:750px;height:auto;overflow:hidden;}
+#list_box table{width:750px;margin:0 auto;overflow:hidden;margin-top:30px;border-top:solid 1px #555; }
+#list_box table th{background-color:#f9f9f9;padding:14px 12px;border-bottom:solid 1px #ddd;}
+#list_box table td{background-color:#fff;color:#555;padding:12px;text-align:center; border-bottom:solid 1px #ddd;}
+#list_box table th.tleft{text-align:left;padding:14px 12px 14px 25px;line-height:24px;font-size:15px;}
+#list_box table td.tleft{text-align:left;padding:12px 12px 12px 25px;line-height:24px;}
+#list_box table td.tleft2{text-align:left;padding:35px 25px;line-height:24px;}
+#list_box table td a:hover{color:#111;font-weight:bold;}
+#list_box p img.mapimg{width:200px;height:130px;padding:10px 5px;}
+
+#searchbox{text-align:right;float:right;overflow:hidden;}
+#searchbox span{float:left;margin-bottom:10px;}
+
+.list_paging {width:100%;margin-top:50px;text-align:center;font-size:14px; line-height:28px; padding:0px 0 100px 0; white-space:nowrap;}
+.list_paging  .num_box {display:inline-block;width:30px;height:28px; line-height:26px;margin-right:3px;vertical-align:middle;
+border:1px solid #ddd;color:#666;background-color:#fff;text-decoration:none;}
+.list_paging  .cur_num {display:inline-block;width:30px;height:28px; line-height:26px;margin-right:3px;vertical-align:middle;
+border:1px solid #777;color:#fff;background-color:#777;}
+.list_paging  .parrow {display:inline-block;width:30px;height:28px; padding:0px;margin-right:3px; vertical-align:middle; text-decoration:none;
+border:1px solid #ddd;color:#666;background-color:#f8f8f8;}
+.list_paging  .arrow_left,
+.list_paging  .arrow_right,
+.list_paging  .arrow_left2,
+.list_paging  .arrow_right2
+{display:block;width:30px;height:28px; margin-right:4px; vertical-align:middle;}
+.list_paging  .arrow_left{background:url('../images/sub/arrow_left.png') no-repeat center;cursor: pointer; }
+.list_paging  .arrow_right{background:url('../images/sub/arrow_right.png') no-repeat center;cursor: pointer; }
+.list_paging  .arrow_left2{background:url('../images/sub/arrow_left2.png') no-repeat center;cursor: pointer; }
+.list_paging  .arrow_right2{background:url('../images/sub/arrow_right2.png') no-repeat center;cursor: pointer; }
+
+/*btn_list*/
+#btn_list{margin:0 auto;width:750px;text-align:right;overflow:hidden;}
+#btn_list p{margin:20px 0;overflow:hidden;}
+#btn_list2{margin:0 auto;width:750px;text-align:right;overflow:hidden;}
+#btn_list2 p{margin:0px 0;overflow:hidden;}

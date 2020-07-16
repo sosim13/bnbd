@@ -1,0 +1,35 @@
+@charset "utf-8"; 
+
+/*reset*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,
+blockquote,pre,abbr,address,cite,code,del,dfn,em,img,
+ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,
+menu,nav,section,summary,time,mark,audio,video {margin:0; padding:0;}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+li {list-style-type:none;}
+img,fieldset,iframe {border:0;}
+img,fieldset {border:none;}
+img {max-width:100%; vertical-align:middle;}
+input {vertical-align:middle;}
+hr {display:none;}
+a {text-decoration:none; border:none; color:#333}
+a:hover {text-decoration: none; color:#000}
+button {cursor:pointer; vertical-align:middle;}
+table {border-collapse: collapse; border-spacing: 0;}
+
+#hide, .hide {display:none;}
+
+/*base*/
+/*fontSetting*/
+@font-face{font-family:'NGothic'; src:url('../fonts/NanumGothic.woff') format('woff');}
+@font-face{font-family:'NGothicEB'; src:url('../fonts/NanumGothicExtraBold.woff') format('woff');}
+
+body { font:14px "NGothic",Gulim; background: url(../images/left_bg.png) repeat-y left #eceef0;}
+body:after {content:""; display:block; clear:both;}
+
+
+
+

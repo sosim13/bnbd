@@ -1,0 +1,48 @@
+@charset "utf-8"; 
+
+/*common*/
+html, body {width: 100%;height:100%;}
+body, div, h1, h2, h3, h4, h5, ul, li, p {margin: 0px; padding: 0px}
+body, input, button, li {font-size: 13px; line-height: 1.6em; font-family: "Malgun Gothic","맑은고딕",dotum,"돋움",sans-serif,'Arial'; }
+h1, h2, h3, h4, h5, h6 {font-size: 13px; text-align: left}
+img, fieldset, iframe, button,form {border:0 none; margin:0;}
+img, input, select, textarea {vertical-align: middle;font-family: "Malgun Gothic","맑은고딕",dotum,"돋움",sans-serif,'Arial'; }
+li{list-style: none}
+a{ text-decoration: none;border : 0 none; color:#444}
+a:hover{text-decoration:none;color:#0090c5;}
+em, address{font-style: normal}
+button{cursor: pointer; vertical-align: middle;}
+.hide{display: none}
+input , textarea{margin:0px;}
+
+/*box*/
+.tbox01{border:none;  background-color:#fff; text-indent:3px;  height:25px;line-height:25px; text-align:left; width:210px;}
+.tbox02{border:solid 1px #ddd;  background-color:#fff; text-indent:3px;  height:22px;line-height:22px; text-align:left; width:145px;}
+.tbox03{border:solid 1px #ddd;  background-color:#fff; text-indent:3px;  height:22px;line-height:22px; text-align:left; width:200px;}
+.tbox04{border:solid 1px #ccc;  background-color:#fff; text-indent:3px;  height:25px;line-height:25px; text-align:left; width:250px;}
+.tbox05{border:solid 1px #ccc;  background-color:#fff; text-indent:3px;  height:25px;line-height:25px; text-align:left; width:680px;}
+.tbox06{border:solid 1px #ccc;  background-color:#fff; text-indent:3px;  height:100px; text-align:left; width:720px;}
+.tbox07{border:solid 1px #ccc;  background-color:#fff; text-indent:3px;  height:25px;line-height:25px; text-align:left; width:90px;}
+.tbox08{border:solid 1px #ccc;  background-color:#fff; text-indent:3px;  height:25px;line-height:25px; text-align:left; width:150px;}
+.tbox09{border:solid 1px #ccc;  background-color:#fff; text-indent:3px;  height:200px;line-height:25px; text-align:left; width:725px;}
+.tbox10{border:none;  background-color:#d2f0f1;   height:140px;line-height:18px; text-align:left; width:185px;overflow-y: auto;}
+
+
+/*font*/
+.red01{ color:#f85107; font-weight:bold;}
+.red02{ color:red; font-weight:bold; font-size:14px;line-height:30px;}
+.blue01{ color:#0066ff; font-weight:bold;}
+.green01{ color:#009933; font-weight:bold;}
+.brown01{color:#bcbc9b}
+.black01{ color:#000; font-weight:bold;}
+.actitle{text-align:left;padding-top:10px;font-weight:bold;font-size:15px;color:#222}
+
+
+
+
+
+
+
+
+
+

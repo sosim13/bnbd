@@ -1,0 +1,254 @@
+@charset "utf-8"; 
+
+/*common*/
+html, body {width: 100%;height:100%;background-color:#efefef}
+body, div, h1, h2, h3, h4, h5, ul, li, p {margin: 0px; padding: 0px}
+body, input, button, li {font-size: 13px; line-height: 1.6em; font-family: "Malgun Gothic","맑은고딕",dotum,"돋움",sans-serif,'Arial'; }
+h1, h2, h3, h4, h5, h6 {font-size: 13px; text-align: left}
+img, fieldset, iframe, button,form {border:0 none; margin:0;}
+img, input, select, textarea {vertical-align: middle;font-family: "Malgun Gothic","맑은고딕",dotum,"돋움",sans-serif,'Arial'; }
+li{list-style: none}
+a{ text-decoration: none;border : 0 none; color:#444}
+a:hover{text-decoration:none;color:#0090c5;}
+em, address{font-style: normal}
+button{cursor: pointer; vertical-align: middle;}
+.hide{display: none}
+input , textarea{margin:0px;}
+
+input[type="checkbox"] { display: inline-block; width:19px; height:19px; vertical-align: middle;
+-webkit-appearance: none; border-radius: 0; border: 0; margin:-3px 5px 0 0; padding:0; cursor: pointer }
+
+input[type="checkbox"] { background:url("../images/sub/check.gif") no-repeat center;background-size:19px 19px; }
+input[type="checkbox"]:checked{ background:url("../images/sub/check_on.gif") no-repeat center; background-size:19px 19px;}
+input[type="checkbox"]:disabled{background:url("../images/sub/check.gif") no-repeat center;background-size:19px 19px;}
+
+/*layout*/
+#wrap{position:relative; margin:0 auto; width:100%;  overflow:hidden; }
+#header{position:fixed;top:0;margin:0 auto; width:100%; background-color:#111;opacity: 0.77;overflow:hidden;z-index:100;}
+#container{ position:relative;margin:0 auto; width:100%;min-height:100%;overflow:hidden;}
+#footer{ position:fixed;bottom:0;margin:0 auto;z-index:1000; width:100%; text-align:center; background-color:#4a6889; padding:10px 0;overflow:hidden;}
+
+/*top*/
+#top{margin:0 auto;width:1100px;height:70px;z-index:99;overflow:hidden;}
+#logo{margin:0 auto;float:left;font-size:20px;width:130px;text-align:center; padding:16px 20px 0 0;color:#fff; line-height:70px;; z-index:99;}
+#login{margin:0 auto;float:left;font-size:13px;  line-height:70px;; z-index:99;overflow:hidden}
+#login span a{font-size:12px;}
+#login span a.btn_login{background-color:#353535; color:#fff; padding:7px 20px;}
+#login span a.btn_admin{background-color:#353535; color:#4ce7fe; padding:7px 20px;}
+#navi{ margin:0 auto;float:left;width:780px;height:70px;; z-index:99;overflow:hidden}
+#navi ul{margin:0; width:790px;overflow:hidden}
+#navi li {margin:0;float:left;vertical-align: middle; color:#fff;}
+#navi li a{ margin:0;float:left; color:#fff; padding:0 21px;font-size:16px;  line-height:70px;height:70px; }
+#navi li a:hover{ margin:0;float:left;color:#52c8ff;text-decoration:none;font-weight:bold; }
+#navi li a.menu_on{ margin:0;float:left;color:#52c8ff;text-decoration:none;font-weight:bold; }
+
+/*menubar*/
+#menubox{position:absolute;top:70px;left:0;margin:0 auto;width:100%;height:190px;z-index:1000;overflow:hidden;background-color:#f5f5f5;
+border-bottom:solid 1px #555; overflow:hidden}
+#menu{margin:0 auto;width:770px;z-index:1001;overflow:hidden;}
+#menu ul{overflow:hidden;float:left;}
+#menu ul.mline{overflow:hidden;float:left;margin:15px 13px;;background:url("../images/icon/mline.gif") no-repeat; width:1px; height:150px;}
+#menu li {margin:0;vertical-align: middle; ;display:block;}
+#menu li.mimg01{margin:15px 0 0 20px;;vertical-align: middle; color:#fff;display:block;width:45px;height:45px;
+background:url("../images/icon/micon01.png") no-repeat;}
+#menu li.mimg02{margin:15px 0 0 35px;;vertical-align: middle; color:#fff;display:block;width:37px;height:45px;
+background:url("../images/icon/micon02.png") no-repeat;}
+#menu li.mimg03{margin:15px 0 0 45px;;vertical-align: middle; color:#fff;display:block;width:48px;height:45px;
+background:url("../images/icon/micon03.png") no-repeat;}
+#menu li.mimg04{margin:15px 0 0 40px;;vertical-align: middle; color:#fff;display:block;width:44px;height:45px;
+background:url("../images/icon/micon04.png") no-repeat;}
+#menu li.mimg05{margin:15px 0 0 20px;;vertical-align: middle; color:#fff;display:block;width:40px;height:45px;
+background:url("../images/icon/micon05.png") no-repeat;}
+#menu li.mimg06{margin:15px 0 0 20px;;vertical-align: middle; color:#fff;display:block;width:40px;height:45px;
+background:url("../images/icon/micon06.png") no-repeat;}
+#menu li a{ margin:0;display:block; }
+#menu li.mtitle{padding:10px;display:block;font-size:15px; font-weight:bold;color:#000;}
+#menu li a.mtxt{padding-left:10px;display:block;font-size:12px;color:#666;}
+#menu li a:hover.mtxt{color:#039be1;text-decoration:underline;font-weight:bold;}
+
+/*footer*/
+#copyright{width:1100px;  margin:0 auto; overflow:hidden}
+#copyright p{ color:#d1f0ff;text-align:left; font-size:12px; margin:0;padding:0;line-height:20px}
+#copyright p span{padding-right:10px;}
+
+/*box*/
+.tbox01{border:none;  background-color:#fff; text-indent:3px;  height:25px;line-height:25px; text-align:left; width:210px;}
+.tbox02{border:solid 1px #ccc;  background-color:#fff; text-indent:3px;  height:30px;line-height:30px; text-align:left; 
+width:310px;color:#0181c6;font-weight:bold;font-size:15px;}
+.tbox03{border:solid 1px #ccc;  background-color:#fff; text-indent:3px;  height:30px;line-height:30px; text-align:right; 
+width:60px;color:#0181c6;font-weight:bold;font-size:15px;}
+
+
+/*font*/
+.red01{ color:#f85107; font-weight:bold;}
+.red02{ color:red; font-weight:bold; font-size:14px;line-height:30px;}
+.blue01{ color:#0066ff; font-weight:bold;}
+.sky01{ color:#009af3; font-weight:bold;}
+.green01{ color:#009933; font-weight:bold;}
+.brown01{color:#bcbc9b}
+.black01{ color:#000; font-weight:bold;}
+.black02{ color:#000;font-size:17px; font-weight:bold;}
+.black03{ color:#666;font-size:13px; }
+.black04{ color:#000;font-size:20px; font-weight:bold;font-family: "나눔고딕",dotum,"돋움"}
+.black05{ color:#666;font-size:14px; }
+.black06{ color:#777;font-size:14px; }
+.black07{ color:#111;font-size:14px;font-weight:bold;}
+.black08{ color:#111;font-size:35px;}
+.black09{ color:#000;}
+.actitle{text-align:left;padding-top:10px;font-weight:bold;font-size:15px;color:#222}
+
+/*selectbox*/
+select{padding:3px 0;}
+input{padding:3px 0;}
+select.selbox01{width:100%;margin:0px;overflow:hidden;}
+select.selbox02{width:40%;margin:0px;overflow:hidden;}
+select.selbox03{width:26%;margin:0px;overflow:hidden;}
+select.selbox04{width:10%;margin:0px;overflow:hidden;}
+select.selbox05{width:12%;margin:0px;overflow:hidden;}
+select.selbox06{width:37%;margin:0px;overflow:hidden;}
+
+
+span.customSelect01 {
+	font-size:14px;
+	background-color: #fff;
+	color:#666;
+	border:solid 1px #ccc;
+	line-height:34px;text-indent:3px;
+	width:90px; height:34px;
+}
+span.customSelect01 span.customSelectInner {
+	padding-right:25px;
+	background:url('../images/sub/btn_select.gif') no-repeat right center;
+}
+
+span.customSelect02 {
+	font-size:14px;
+	background-color: #fff;
+	color:#666;
+	border:solid 1px #ccc;
+	line-height:34px;text-indent:3px;
+	width:280px; height:34px;
+}
+span.customSelect02 span.customSelectInner {
+	padding-right:195px;
+	background:url('../images/sub/btn_select.gif') no-repeat right center;
+}
+
+span.customSelect03 {
+	font-size:14px;
+	background-color: #fff;
+	color:#666;
+	border:solid 1px #ccc;
+	line-height:34px;text-indent:3px;
+	width:570px; height:34px;
+}
+span.customSelect03 span.customSelectInner {
+	padding-right:480px;
+	background:url('../images/sub/btn_select.gif') no-repeat right center;
+}
+
+/* 차량정보관리 리스트-출발시간,종료시간 */
+span.customSelect04 {
+	font-size:14px;
+	background-color: #fff;
+	color:#666;
+	border:solid 1px #ccc;
+	line-height:34px;text-indent:3px;
+	width:120px; height:34px;
+}
+span.customSelect04 span.customSelectInner {
+	padding-right:35px;
+	background:url('../images/sub/btn_select.gif') no-repeat right center;
+}
+
+/* 차량정보관리 리스트-차량번호 */
+span.customSelect05 {
+	font-size:14px;
+	background-color: #fff;
+	color:#666;
+	border:solid 1px #ccc;
+	line-height:34px;text-indent:3px;
+	width:260px; height:34px;
+}
+span.customSelect05 span.customSelectInner {
+	padding-right:85px;
+	background:url('../images/sub/btn_select.gif') no-repeat right center;
+}
+
+/* 차량정보관리 상세-운행시간 */
+span.customSelect06 {
+	font-size:14px;
+	background-color: #fff;
+	color:#666;
+	border:solid 1px #ccc;
+	line-height:34px;text-indent:3px;
+	width:80px; height:34px;
+}
+span.customSelect06 span.customSelectInner {
+	padding-right:0px;
+	background:url('../images/sub/btn_select.gif') no-repeat right center;
+}
+
+/* 알림정보관리,차량일지-년 */
+span.customSelect07 {
+	font-size:14px;
+	background-color: #fff;
+	color:#666;
+	border:solid 1px #ccc;
+	line-height:34px;text-indent:3px;
+	width:90px; height:34px;
+}
+span.customSelect07 span.customSelectInner {
+	padding-right:17px;
+	background:url('../images/sub/btn_select.gif') no-repeat right center;
+}
+
+/* 알림정보관리,차량일지-월일 */
+span.customSelect08 {
+	font-size:14px;
+	background-color: #fff;
+	color:#666;
+	border:solid 1px #ccc;
+	line-height:34px;text-indent:3px;
+	width:90px; height:34px;
+}
+span.customSelect08 span.customSelectInner {
+	padding-right:31px;
+	background:url('../images/sub/btn_select.gif') no-repeat right center;
+}
+
+/* 알림정보관리,차량일지-차량번호 */
+span.customSelect09 {
+	font-size:14px;
+	background-color: #fff;
+	color:#666;
+	border:solid 1px #ccc;
+	line-height:34px;text-indent:3px;
+	width:280px; height:34px;
+}
+span.customSelect09 span.customSelectInner {
+	padding-right:106px;
+	background:url('../images/sub/btn_select.gif') no-repeat right center;
+}
+
+/* 알림정보관리 알림구분 */
+select.customSelect10{
+	margin-left:-20px;
+}
+span.customSelect10 {
+	font-size:14px;
+	background-color: #fff;
+	color:#666;
+	border:solid 1px #ccc;
+	line-height:34px;text-indent:3px;
+	width:110px; height:34px;
+	margin-left:-20px;
+}
+span.customSelect10 span.customSelectInner {
+	padding-right: 15px;
+	background:url('../images/sub/btn_select.gif') no-repeat right center;
+}
+
+/*btn*/
+a.btn_black p{width:100px;height:26px;line-height:26px;text-align:center;margin:15px 0 15px 90px;border:solid 1px #555;color:#fff;
+background-color: #777;font-weight:bold; }

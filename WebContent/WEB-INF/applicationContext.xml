@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+   http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+   http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+
+	<context:component-scan base-package="kr.*" />
+
+	<mvc:annotation-driven />
+
+	<context:property-placeholder location="/WEB-INF/application/property/${service.mode}db.properties" />
+
+	<!-- Spring message 태그 사용 -->
+	<bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>WEB-INF/application/message/message</value>
+				<value>WEB-INF/application/message/menu</value>
+			</list>
+		</property>
+		<property name="cacheSeconds" value="5" />
+	</bean>
+	<bean id="messageSourceAccessor" class="org.springframework.context.support.MessageSourceAccessor">
+		<constructor-arg>
+			<ref local="messageSource" />
+		</constructor-arg>
+	</bean>
+	
+	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+		<property name="defaultLocale" value="ko" />
+		<!-- <property name="defaultLocale" value="zh" /> -->
+		<!-- <property name="defaultLocale" value="zh_CN" /> -->
+	</bean>
+
+	<!-- JAVA에서 properties 접근 -->
+	<bean id="configuration" class="org.apache.commons.configuration.PropertiesConfiguration">
+		<constructor-arg type="java.lang.String" value="${swpWebRoot}WEB-INF/application/property/${service.mode}application.properties" />
+	</bean>
+	
+	<bean id="multipartResolver"  class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="2000000" />
+	</bean>
+	
+	<!-- part interceptor -->
+	<mvc:interceptors>
+		<bean class="kr.bnbd.common.UrlInterceptor" />
+	</mvc:interceptors>
+</beans>
