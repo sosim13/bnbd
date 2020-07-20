@@ -6,12 +6,17 @@
 <meta charset="utf-8">
 <title>민원상담관리</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"/>
-<link rel="shortcut icon" type="image/x-icon" href="${ImagePath}/nmsfavicon.png"/>
-<link type="text/css" rel="stylesheet" href="${CssPath}/font-awesome.min.css"/>
-<link type="text/css" rel="stylesheet" href="${CssPath}/common.css"/>
-<link type="text/css" rel="stylesheet" href="${CssPath}/nms.css"/>
+<!-- font-awesome -->
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="${CssPath}/reset.css" />
+<link rel="stylesheet" type="text/css" href="${CssPath}/contents.css" />
+
+<!-- jquery -->
 <script type="text/javascript" src="${JsPath}/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="${JsPath}/nms.js"></script>
+<script src="${JsPath}/jquery.simple-sidebar.min.js"></script>
+<script src="${JsPath}/slight.js"></script>
 <!--[if lte IE 9]>
 <link rel="stylesheet" type="text/css" href="css/main_ie.css" />
 <![endif]-->
@@ -29,22 +34,25 @@ function enterkey() {
 </script>
 
 </head>
-<body>
-	<div id="loginContainer">
-		<header class="group">
-			<h1 class="logo"><img src="${ImagePath}/logo.png" alt="scgs로고"><em>${HomePage}</em></h1>
-		</header>
-		<section class="group">
-			<form id="loginForm" action="${contextPath}/login/loginOk.do" method="post">
-				<fieldset>
-					<legend class="hide">로그인</legend>
-					<p><label for="id" class="hide">아이디</label><input type="text" id="adminId" name="adminId" class="tbox" placeholder="아이디입력" value=""></p>
-					<p><label for="pw" class="hide">비밀번호</label><input type="password" id="password" name="password" class="tbox" placeholder="비밀번호입력" value="" onkeyup="enterkey();"></p>
-					<p><a href="javascript:loginOk();" class="btn btn_login">LOGIN</a></p>
-				</fieldset>
-			</form>
-		</section>
-		<footer class="hide"></footer>
-	</div>
+<body>	
+	<!-- content -->
+	<!-- Login -->
+	<section id="content">
+		<form id="loginForm" action="${contextPath}/login/loginOk.do" method="post">
+	    <h2 class="hide">로그인</h2>
+			<div id="login">
+				<p><a href="#" class="login_logo">로그인로고</a></p>
+				<div id="login_tbox">
+					<p><INPUT TYPE="text" NAME="adminId" id="adminId" class="loginbox" placeholder="아이디"></p>
+					<p><INPUT TYPE="text" NAME="password" id="password" class="loginbox" placeholder="비밀번호"  onkeyup="enterkey();"></p>	
+					<p><a href="#" class="btn_login">로그인</a></p>	
+					<p><a href="javascript:loginOk();" class="btn_home">홈으로</a></p>	
+				</div>
+					
+			</div>
+		</form>
+	</section>
+	<!-- //  Login -->
+	<!-- //content -->
 </body>
 </html>
